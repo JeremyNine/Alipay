@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        .blocklist{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        .ul_list{
+            width: 100%;
+            height: 100%;
+        }
+        .ul_list li{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+        .ul_list li:nth-child(1){
+            background-color: rgb(255, 255, 255);
+        }
+        .ul_list li:nth-child(2){
+            background-color:white;
+        }
+        .ul_list li:nth-child(3){
+            background-color: rgba(46, 255, 19, 0.25);
+        }
+        .ul_list li:nth-child(4){
+            background-color: rgba(255, 217, 35, 0.25);
+        }
+        .ul_list li:nth-child(5){
+            background-color: rgba(255, 6, 193, 0.25);
+        }
+        .ul_list li:nth-child(6){
+            background-color: rgba(45, 11, 255, 0.25);
+        }
+        .ul_list li:nth-child(7){
+            background-color: rgba(145, 11, 255, 0.25);
+        }
+        .title_list{
+            position: fixed;
+            width: 100%;
+            height: 30px;
+            z-index: 999;
+            background-color: rgba(0, 0, 0, 0.39);
+            font-size: small;
+        }
+        .title{
+            width: 100%;
+            height: auto;
+            color: white;
+        }
+        .left{
+            margin-left:200px;
+            width: 100%;
+            line-height: 30px;
+        }
+        .left_list{
+            width: 50px;
+            height: auto;
+            float: left;
+            list-style: none;
+        }
+        .right{
+            margin-right: 200px;
+            line-height: 30px;
+        }
+        .right_list{
+            width: 100px;
+            height: auto;
+            float: right;
+            list-style: none;
+        }
+        .logo{
+            height: 15px;
+            background-color: rgba(221, 221, 221, 0.55);
+            padding: 40px 50px;
+            overflow: hidden;
+            width: 100%;
+        }
+        .ul_logo{
+            float: left;
+            margin-left: 200px;
+        }
+        .li_logo{
+            list-style: none;
+            float: left;
+            width: 80px;
+        }
+        .logoimg{
+            float: left;
+            margin-left: 150px;
+            margin-top: -15px;
+        }
+        .imgfirst{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin-left: -50%;
+        }
+        .li_list{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            padding: 0;
+            overflow: hidden;
+        }
+        .centerblock{
+            z-index: 99;
+            position: absolute;
+            width: 500px;
+            height: 300px;
+            margin-left: 450px;
+            margin-top: 300px;
+        }
+        .buttonblock{
+            height: 50px;
+            position: absolute;
+            width: 500px;
+            margin-top: 30px;
+        }
+        .btnleft,.btnright{
+            width: 150px;
+            height: 30px;
+            border: 1px solid white;
+            border-radius: 15%;
+            background-color: transparent;
+        }
+        .btnleft{
+            background-color: #00bbee;
+        }
+        .songshu{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            margin-left: -50%;
+        }
+        .datou{
+            z-index: 10 !important;
+            position: absolute;
+        }
+        .div2{
+            position: absolute;
+        }
+        .img_yun,.img_yun1,.img_yun2,.imgblock2{
+            position: absolute;
+            z-index: 9 !important;
+        }
+        .img_yun{
+            left: 300px;
+        }
+        .img_yun1{
+            left: 400px;
+        }
+        .imgblock2{
+            top: 100px;
+            left: 300px;
+            opacity: 0;
+        }
+        .div3{
+            position: absolute;
+        }
+        .shucai{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            margin-left: -50%;
+        }
+        .img_tu1{
+            position: absolute;
+            z-index: 11 !important;
+            left: -200px;
+            top: -300px;
+        }
+        .img_tu2{
+            position: absolute;
+            z-index: 10 !important;
+            top: 950px;
+            left:460px;
+        }
+        .img_tu3{
+            position: absolute;
+            z-index: 10 !important;
+            top: 300px;
+            left: 800px;
+            opacity: 0;
+        }
+        .div4{
+            position: absolute;
+            z-index: 10 !important;
+            top: 150px;
+            left: 250px;
+        }
+        .text4{
+            opacity: 0;
+        }
+        .text5{
+            opacity: 0;
+        }
+        .text6{
+            opacity: 0;
+        }
+        .nvwa{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin-left: -50%;
+        }
+        .div5{
+            position: absolute;
+            z-index: 10 !important;
+            top: 150px;
+            left: 700px;
+        }
+        .movie{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin-left: -50%;
+        }
+        .div6{
+            position: absolute;
+            z-index: 10 !important;
+            top: 150px;
+            left: 150px;
+        }
+        .nanwa{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin-left: -50%;
+        }
+        .play{
+            position: absolute;
+            top: 350px;
+            left: 900px;
+            z-index: 99999;
+            border-radius: 25%;
+            background-color: #00BBEE;
+        }
+        .dio{
+            position: absolute;
+            width: 100%;
+            left: 0;
+        }
+        .totop{
+            position: fixed;
+            right: 0;
+            top: 400px;
+            z-index: 9999999;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="blocklist">
+    <div class="title_list">
+        <div class="title">
+            <ul class="left">
+                <li class="left_list">个人</li>
+                <li class="left_list">企业</li>
+                <li class="left_list">开发者</li>
+            </ul>
+            <ul class="right">
+                <li class="right_list">支付宝APP</li>
+                <li class="right_list">客户服务</li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img class="logoimg" src="img/T1HHFgXXVeXXXXXXXX.png" alt=""/>
+            <ul class="ul_logo">
+                <li class="li_logo">首页</li>
+                <li class="li_logo">财富中心</li>
+                <li class="li_logo">安全保障</li>
+                <li class="li_logo">商家中心</li>
+                <li class="li_logo">开放平台</li>
+            </ul>
+        </div>
+    </div>
+    <ul class="ul_list">
+        <li class="li_list">
+            <button class="play">播放</button>
+            <video class="dio" src="./img/T1T78eXapfXXXXXXXX.mp4"></video>
+            <button class="totop">返回顶部</button>
+            <div class="centerblock">
+                <div class="imgblock1">
+                    <img src="img/4JdljnmTmX.png" alt=""/>
+                </div>
+                <div class="buttonblock">
+                    <button class="btnleft">登录</button>
+                    <button class="btnright">立即注册</button>
+                </div>
+            </div>
+            <img class="imgfirst" src="img/T1k5ReXXlkXXXXXXXX.jpg" alt=""/>
+        </li>
+        <li class="li_list">
+            <div class="div2">
+                <img class="img_yun" src="img/T19AteXc4xXXXXXXXX.png" alt=""/>
+                <img class="img_yun1" src="img/T10QFeXdlgXXXXXXXX.png" alt=""/>
+                <img class="img_yun2" src="img/4JdkvPL4wX.png" alt=""/>
+                <img class="imgblock2" src="img/4JdlKWNmB3.png" alt=""/>
+            </div>
+            <img class="datou" src="img/T1GDtfXeRcXXXXXXXX.png" alt=""/>
+            <img class="songshu" src="img/T1yXVfXfddXXXXXXXX.jpg" alt=""/>
+        </li>
+        <li class="li_list">
+            <div class="div3">
+                <img class="img_tu1" src="img/T1zABeXkxsXXXXXXXX.png" alt=""/>
+                <img class="img_tu2" src="img/T1PQteXadyXXXXXXXX.png" alt=""/>
+                <img class="img_tu3" src="img/T148deXkVlXXXXXXXX.png" alt=""/>
+            </div>
+            <img class="shucai" src="img/4JdlRITPmX.jpg" alt=""/>
+        </li>
+        <li class="li_list">
+            <div class="div4">
+                <img class="text4" src="img/T14uXfXdBXXXXXXXXX.png" alt=""/>
+            </div>
+            <img class="nvwa" src="img/T1y3dfXfFlXXXXXXXX.jpg" alt=""/>
+        </li>
+        <li class="li_list">
+            <div class="div5">
+                <img class="text5" src="img/T1fCVfXg0hXXXXXXXX.png" alt=""/>
+            </div>
+            <img class="movie" src="img/4JdkvtFg7B.jpg" alt=""/>
+        </li>
+        <li class="li_list">
+            <div class="div6">
+                <img class="text6" src="img/4OdnkirZ89.png" alt=""/>
+            </div>
+            <img class="nanwa" src="img/4JdidBF3Kn.jpg" alt=""/>
+
+        </li>
+
+    </ul>
+</div>
+<script src="js/jquery-3.0.0.js"></script>
+<script>
+    var num=0;
+    var isture=true;
+$(function () {
+    $(".play").click(function () {
+        $(".dio").css(
+                {"zIndex":"99"}
+        )
+        $(".dio").trigger("play");
+    })
+    $(".totop").click(function () {
+        $(".ul_list").animate({
+            "marginTop":0+"px",
+        },500, function () {
+            num=0;
+        })
+    })
+    var screenheight=document.documentElement.clientHeight;
+    $("html,body").on("mousewheel", function (e) {
+        if(e.originalEvent.deltaY>0){
+            if(isture){
+                isture=false;
+                num++;
+                if(num>5){
+                    num=5;
+                }
+                if(num==1){
+                    $(".imgblock2").animate({"opacity":1},3500,function(){
+
+                    })
+                    $(".img_yun1").animate({"left":100},3000, function () {
+                        
+                    })
+                    $(".img_yun").animate({"left":80},3500, function () {
+
+                    })
+                }
+                if(num==2){
+                    $(".img_tu3").animate({"opacity":1},3500, function () {
+
+                    })
+                    $(".img_tu1").animate({
+                        "left":70,
+                        "top":20
+                    },1500, function () {
+
+                    })
+                    $(".img_tu2").animate({
+                        "left":260,
+                        "top":350
+                    },1200, function () {
+
+                    })
+                }
+                if(num==3){
+                    $(".text4").animate({"opacity":1},3500, function () {
+
+                    })
+                    $(".nvwa").animate({
+                        "width":104+"%",
+                        "hright":104+"%"
+                    },3500, function () {
+                        
+                    })
+                }
+                if(num==4){
+                    $(".text5").animate({"opacity":1},3500, function () {
+
+                    })
+                }
+                if(num==5){
+                    $(".text6").animate({"opacity":1},3500, function () {
+
+                    })
+                }
+                $(".ul_list").animate({
+                            "marginTop":-screenheight*num+"px"},500, function () {
+                    isture=true;
+                } );
+
+            }
+        }
+        else{
+            if(isture){
+                isture=false;
+                num--;
+                if(num<0){
+                    num=0;
+                }
+                $(".ul_list").animate({
+                    "marginTop":-screenheight*num+"px"
+                },500, function () {
+                    isture=true;
+                });
+            }
+        }
+    })
+})
+</script>
+</body>
+</html>
