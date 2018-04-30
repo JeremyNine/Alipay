@@ -25,8 +25,11 @@
             color:#09AAEC ;
             font-size: 12px;
             margin-left: 200px;
-            width: 200px;
+            width: 100px;
             float: left;
+        }
+        .logospan:hover{
+            cursor: pointer;
         }
         .blockspan{
             width: 128px;
@@ -45,6 +48,177 @@
             color: silver;
             font-size: 12px;
         }
+        .ul_list>li:hover{
+            cursor:pointer;
+        }
+        a{
+            text-decoration: none;
+            color: silver;
+        }
+        .img_div{
+            clear: both;
+            width: 114px;
+            height: auto;
+            margin-left: 177px;
+            margin-top: 77px;
+        }
+        .trans_div{
+            width: 300px;
+            height: 300px;
+            margin-left: 800px;
+            margin-top: 30px;
+            background-color: rgba(16, 16, 16, 0.54);
+        }
+        .title{
+            height: 50px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.85);
+        }
+        .title_ul{
+            list-style: none;
+        }
+        .title_li{
+            float: left;
+            line-height: 50px;
+            width: 150px;
+        }
+        .title_li:hover{
+            cursor: pointer;
+        }
+        .title_li:nth-child(1){
+            border-bottom: 3px solid #09AAEC;
+        }
+        .title_li:nth-child(2){
+            border-bottom: 3px solid white;
+        }
+        .txtblock{
+            width: 300px;
+            height: 247px;
+            margin-top: 3px;
+            display: block;
+        }
+        .imgblock{
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+            margin-top: 20px;
+            border: 1px solid black;
+        }
+        .imgblock>img{
+            width: 100%;
+            height: 100%;
+        }
+        .text{
+            text-align: center;
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 14px;;
+            margin-top: 5px;
+        }
+        .bottomdiv{
+            color: rgba(255, 255, 255, 0.85);
+            margin-top: 15px;
+        }
+        .bottomdiv>ul{
+            list-style: none;
+            width: 200px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        .bottomdiv>ul>li{
+            float: left;
+            font-size: small;
+            width: 100px;
+            text-align: center;
+        }
+        .bottomdiv>ul>li:hover{
+            cursor: pointer;
+        }
+        .ckform{
+            width: 300px;
+            height: 247px;
+            margin-top: 10px;
+            display: none;
+        }
+        input{
+            text-shadow: none;
+            width: 215px;
+            height: 40px;
+            margin-left: 61px;
+            border: none;
+            margin-top: 9px;
+        }
+        form>img:nth-child(1){
+            position: absolute;
+            left:821px;
+            top: 220px;
+        }
+        form>img:nth-child(3){
+            position: absolute;
+            left:820px;
+            top: 269px;
+        }
+        .forget{
+            width: 100px;
+            float: right;
+            margin-right: 12px;
+            color: rgba(255, 255, 255, 0.85);
+            font-size: smaller;
+            margin-top: 5px;
+        }
+        button{
+            width: 257px;
+            height: 42px;
+            margin-left: 20px;
+            border-radius:6px;
+            border: none;
+            background-color: #09AAEC;
+            font-size: 17px;
+            color: white;
+            margin-top: 20px;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        .spandiv{
+            margin-top: 10px;
+        }
+        .spandiv>span{
+            font-size: small;
+        }
+        .left{
+            margin-left: 30px;
+            color: rgba(255, 255, 255, 0.86);
+        }
+        .right{
+            margin-left: 100px;
+            color: #09AAEC;
+        }
+        .last_div{
+            color: rgba(255, 255, 255, 0.85);
+            font-size: xx-small;
+            width: 500px;
+            margin: 0 auto;
+            margin-top: 130px;
+            height: 20px;
+        }
+        .last_div>ul{
+            list-style: none;
+        }
+        .last_div>ul>li{
+            float: left;
+        }
+        .hao{
+            clear: both;
+            width: 200px;
+            margin: 0 auto;
+            color: rgba(255, 255, 255, 0.85);
+            font-size: xx-small;
+            height: 20px;
+            margin-top: 10px;
+        }
+        li:hover{
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -54,11 +228,67 @@
     </div>
     <div class="blockspan">
         <ul class="ul_list">
-            <li>支付宝首页　|　</li>
+            <li><a href="index.html">支付宝首页　|　</a></li>
             <li>服务大厅　|　</li>
             <li>提建议</li>
         </ul>
     </div>
+    <div class="img_div">
+        <img src="./img/logo.png" alt=""/>
+    </div>
+    <div class="trans_div">
+        <div class="title">
+            <ul class="title_ul">
+                <li class="title_li">扫码登录</li>
+                <li class="title_li">账号登录</li>
+            </ul>
+        </div>
+        <div class="txtblock">
+            <div class="imgblock">
+                <img src="./img/erweima.png" alt=""/>
+            </div>
+            <div class="text">
+                请使用手机支付宝扫码
+            </div>
+            <div class="bottomdiv">
+                <ul>
+                    <li>使用帮助　|　</li>
+                    <li>下载手机支付宝</li>
+                </ul>
+            </div>
+        </div>
+        <div class="ckform">
+            <div>
+                <form action="">
+                    <img src="./img/userimg.png" alt=""/><input type="text"/>
+                    <img src="./img/cord.png" alt=""/><input type="text"/>
+                </form>
+            </div>
+            <div class="forget">
+                忘记登录密码?
+            </div>
+            <button>登 录</button>
+            <div class="spandiv">
+                <span class="left">淘宝会员登录</span>
+                <span class="right">免费注册</span>
+            </div>
+        </div>
+
+    </div>
+    <div class="last_div">
+        <ul>
+          <li>关于支付宝　|　</li>
+          <li>诚征英才　|　</li>
+          <li>联系我们　|　</li>
+          <li>International Business　|　</li>
+          <li>About Alipay</li>
+        </ul>
+    </div>
+    <div class="hao">
+        ICP证：沪B2-20150087
+    </div>
 </div>
+<script src="js/jquery-3.0.0.js"></script>
+<script src="./js/js.js"></script>
 </body>
 </html>

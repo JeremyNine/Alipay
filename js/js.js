@@ -44,6 +44,32 @@ $(function(){
             {"display":"none"}
         )
     })
-
-
+    $(".title_li:nth-child(1)").click(function(){
+        $(".title_li:nth-child(1)").css(
+            {"border-bottom":"3px solid #09AAEC"}
+        )
+        $(".title_li:nth-child(2)").css(
+            {"border-bottom":"3px solid white"}
+        )
+        $(".txtblock").css(
+            {"display":"block"}
+        )
+        $(".ckform").css(
+            {"display":"none"}
+        )
+    })
+    $(".title_li:nth-child(2)").click(function(){
+        $(".title_li:nth-child(2)").css(
+            {"border-bottom":"3px solid #09AAEC"}
+        )
+        $(".title_li:nth-child(1)").css(
+            {"border-bottom":"3px solid white"}
+        )
+        $(".txtblock").css(
+            {"display":"none"}
+        )
+        $(".ckform").css(
+            {"display":"block"}
+        )
+    })
 })
