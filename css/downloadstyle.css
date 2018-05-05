@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.block{
+    width: 100%;
+    height: auto;
+}
+.titlediv{
+    width: 100%;
+    height: 27px;
+    background-color: rgba(0, 0, 0, 0.81);
+}
+.titlediv>ul{
+    list-style: none;
+    color: rgba(255, 255, 255, 0.86);
+    width: 500px;
+    overflow: hidden;
+    font-size: small;
+    line-height: 27px;
+    margin-left: 700px;
+}
+.titlediv>ul>li{
+    float: left;
+}
+.yellowimg{
+    width: 100%;
+    height: 610px;
+    background-image: url("../downloadimg/yellowbg.jpg");
+}
+.logoimg{
+    width: 132px ;
+    height: 47px;
+    background-image: url("../downloadimg/zfbtitle.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 95px;
+    top: 64px;
+}
+.ptitle{
+    width: 500px;
+    height: 130px;
+    position: absolute;
+    top: 230px;
+    left: 97px;
+    background-image: url("../downloadimg/ptitle.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.littlegirl{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 120px;
+    left: 700px;
+    background-image: url("../downloadimg/littlegirl.png");
+    background-size: 127%;
+    background-position: -152px -85px;
+    background-repeat: no-repeat;
+}
+.down{
+    width: 300px;
+    height: 74px;
+    position: absolute;
+    top: 450px;
+    left: 93px;
+    background-image: url("../downloadimg/download.png");
+    background-size: 100%;
+    background-position: -1px -1px;
+    background-repeat: no-repeat;
+}
+.down:hover{
+    cursor: pointer;
+}
+.banben{
+    color: #FEFEF1;
+    position: absolute;
+    top: 540px;
+    left: 93px;
+}
+.choose{
+    width: 100%;
+    height: 100px;
+    background-color: #C8EEFE;
+}
+.choose1{
+    width: 300px;
+    height: 100px;
+    float: left;
+    margin-left: 370px;
+    background-image: url("../downloadimg/clickchange.png");
+    background-position: -1px -122px;
+}
+.choose1:hover{
+    cursor: pointer;
+}
+.choose2{
+    width: 300px;
+    height: 100px;
+    float: left;
+    background-image: url("../downloadimg/clickchange.png");
+    background-position: -1px -242px;
+}
+.choose2:hover{
+    cursor: pointer;
+}
+.onediv1{
+    width: 100%;
+    height: 400px;
+}
+.leftp1{
+    width: 500px;
+    height: 400px;
+    float: left;
+    margin-left: 172px;
+    background-image: url("../downloadimg/p1.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: 50px 140px;
+}
+.rightp1{
+    width: 500px;
+    height: 400px;
+    float: left;
+    background-image: url("../downloadimg/first.jpg");
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+.onediv2{
+    width: 100%;
+    height: 400px;
+}
+.leftp2{
+    width: 500px;
+    height: 400px;
+    float: left;
+    margin-left: 172px;
+    background-image: url("../downloadimg/second.jpg");
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+.rightp2{
+    width: 500px;
+    height: 400px;
+    float: left;
+    background-image: url("../downloadimg/p2.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: 50px 140px;
+}
+.onediv3{
+    width: 100%;
+    height: 400px;
+}
+.leftp3{
+    width: 500px;
+    height: 400px;
+    float: left;
+    margin-left: 172px;
+    background-image: url("../downloadimg/p3.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: 50px 140px;
+}
+.rightp3{
+    width: 500px;
+    height: 400px;
+    float: left;
+    background-image: url("../downloadimg/third.jpg");
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+.line{
+    width: 100%;
+    height: 10px;
+    background-image: url("../downloadimg/line.png");
+    background-repeat: no-repeat;
+    background-position: 150px 0px;
+    margin-top: 10px;
+}
+.bootmdiv{
+    width: 100%;
+    height: 100px;
+    border-top: 1px solid silver;
+    margin-top: 100px;
+}
+.bootmul{
+    list-style: none;
+    color: #9F9FAA;
+    font-size: small;
+    margin-left: 350px;
+    margin-top: 30px;
+    height: 20px;
+}
+.bootmul>li{
+    float: left;
+}
+.lastdiv{
+    clear: both;
+    width: 200px;
+    font-size: small;
+    color: #9F9FAA;
+    margin: 0 auto;
+    height: 20px;
+    margin-top: 10px;
+}
+.english{
+    width:65px;
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #FEFEF1;
+    position: absolute;
+    top: 50px;
+    left: 1240px;
+    color: #FEFEF1;
+    border-radius: 3px;
+    text-align: center;
+}
+.english:hover{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.86);
+}
